@@ -1,38 +1,112 @@
 .App {
-  text-align: center;
+  background-color: rgb(12, 11, 15);
+  height: 100vh;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Back{
+  height: 40vh;
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  padding: 3em;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Front{
+  height: 100%;
+  transform: translateY(-8%);
+  width: 23em;
+  position: absolute;
+  left: 50%;
+  z-index: 2;
+  border-radius: 6px;
+  background-color: #53df8b;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Encapsulamento{
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 38rem;
+  border-radius: 6px;
+  padding-left: 3em;
+  padding-right: 2em;
+  height: 18em;
+  gap: 10em;
+  background-color: rgb(23, 23, 32);
+}
+.Login{
+  margin-left: 1em;
+  top: 4em;
+}
+.Registrar{
+  top: 4em;
+}
+.Registrar div{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-weight: 600;
+}
+.Registrar div label{
+  transition: top 1s;
+  font-size: 0.9em;
+  color: #5ddf91;
+  position: relative;
+  left: 1.5em;
+}
+.Registrar div input{
+  border: none;
+  background-color: #5d5d6e;
+  border-radius: 4px;
+  padding: 2px;
+  border-bottom: 2px solid #000000;
+}
+.Registrar div input:focus{
+  outline: none;
+}
+button{
+  margin-top: 1em;
+  padding: 10px;
+  width: 80%;
+  position: relative;
+  left: 15%;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  background-color: #5ddf91;
+  font-weight: 700;
+}
+.Login div{
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+}
+.Login div label{
+  transition: top 1s;
+  font-size: 0.9em;
+  color: #5ddf91;
+  position: relative;
+  left: 1.5em;
+}
+.Login div .diferent{
+  display: flex;
+  flex-direction: row;
+}
+.Registrar div .diferent{
+  display: flex;
+  flex-direction: row;
+}
+svg{
+  position: relative;
+  right: 1em;
+  width: 1.5em;
+  height: 1.5em;
+  color: rgb(102, 211, 144);
+}
+.Login div input{
+  border: none;
+  background-color: #5d5d6e;
+  border-radius: 4px;
+  padding: 2px;
+  border-bottom: 2px solid #000000;
+}
+.Login div input:focus{
+  outline: none;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}

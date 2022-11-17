@@ -1,0 +1,82 @@
+.Home_Main{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(12, 11, 15);
+    position: absolute;
+}
+.Home_Main h1{
+    color: #3cff4c;
+}
+.ecra{
+    box-shadow: 0px 0px 15px 2px #000000;
+    height: 90%;
+    margin:2em;
+    display: flex;
+    border-radius: 1em;
+}
+.ecra .Menu{
+    height: 95%;
+    margin: 2em;
+    width: 24%;
+    border-radius: 0.7em;
+}
+.ecra .container{
+    box-shadow: inset 0px 0px 15px #000000;
+    height: 95%;
+    width: 76%;
+    border-radius: 0.7em;
+    margin: 1em;
+}
+.ecra .Menu .user{
+    display: flex;
+    align-items: center;
+    margin: 1em;
+    position: relative;
+    left: 1em;
+    font-size: 1em;
+    font-weight: 600;
+    color: #ffff;
+}
+.ecra .Menu hr{
+    width: 70%;
+    position: relative;
+    right: 2em;
+    border: none;
+    border-bottom: 1px solid rgba(82, 82, 82, 0.541);
+}
+.ecra .Menu ul{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    height: 79%;
+}
+.ecra .Menu ul div{
+    color: #535353;
+    display: flex;
+}
+.ecra .Menu ul svg{
+    color: #535353;
+    display: flex;
+}
+.ecra .Menu ul li{
+    list-style: none;
+    font-size: 1em;
+    font-weight: 600;
+}
+.ecra .Menu ul div:hover li ,
+.ecra .Menu ul div:hover svg{
+    cursor: pointer;
+    color: #3cff4c;
+}
+.ecra .Menu ul .Settings{
+    margin-top: 140%;
+}
+.ecra .container h1{
+    text-align: center;
+}
+.ecra .container p{
+    color: #ffff;
+    font-weight: 500;
+    margin: 1.6em;
+}
