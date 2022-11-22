@@ -3,11 +3,10 @@
   height: 100vh;
 }
 .Back{
-  height: 40vh;
-  position: absolute;
-  top: 25%;
-  left: 25%;
-  padding: 3em;
+  display: inline-block;
+  position: relative;
+  top: 15%;
+  left: 35%;
 }
 .Front{
   height: 100%;
@@ -18,54 +17,32 @@
   z-index: 2;
   border-radius: 6px;
   background-color: #53df8b;
+  display: none;
 }
 .Encapsulamento{
   display: flex;
+  flex-direction: column;
   align-items: center;
-  position: relative;
-  width: 38rem;
-  border-radius: 6px;
+  height: 100%;
   padding-left: 3em;
-  padding-right: 2em;
-  height: 18em;
-  gap: 10em;
+  padding-right: 3em;
+  padding-top: 5em;
+  padding-bottom: 5em;
+  border-radius: 15px;
+  box-shadow: 0px 0px 25px black;
   background-color: rgb(23, 23, 32);
 }
 .Login{
-  margin-left: 1em;
-  top: 4em;
-}
-.Registrar{
-  top: 4em;
-}
-.Registrar div{
   display: flex;
   flex-direction: column;
-  font-weight: 600;
+  top: 4em;
+  gap: 1em;
 }
-.Registrar div label{
-  transition: top 1s;
-  font-size: 0.9em;
-  color: #5ddf91;
-  position: relative;
-  left: 1.5em;
-}
-.Registrar div input{
-  border: none;
-  background-color: #5d5d6e;
-  border-radius: 4px;
-  padding: 2px;
-  border-bottom: 2px solid #000000;
-}
-.Registrar div input:focus{
-  outline: none;
-}
-button{
+
+.page-login-button{
   margin-top: 1em;
   padding: 10px;
-  width: 80%;
-  position: relative;
-  left: 15%;
+  width: 100%;
   border-radius: 10px;
   border: none;
   cursor: pointer;
@@ -88,13 +65,10 @@ button{
   display: flex;
   flex-direction: row;
 }
-.Registrar div .diferent{
-  display: flex;
-  flex-direction: row;
-}
+
 svg{
   position: relative;
-  right: 1em;
+  right: 0.4em;
   width: 1.5em;
   height: 1.5em;
   color: rgb(102, 211, 144);
@@ -109,4 +83,18 @@ svg{
 .Login div input:focus{
   outline: none;
 }
-
+.Icon-Login{
+  margin: 0%;
+  padding: 0%;
+  font-size: 6em;
+  transform: translateY(-0.5em);
+  animation: Flutter 3s linear 1s infinite alternate;
+}
+@keyframes Flutter {
+  0%{
+    transform: translateY(-0.2em);
+  }
+  100%{
+    transform: translateY(0em);
+  }
+}
