@@ -5,19 +5,8 @@
 .Back{
   display: inline-block;
   position: relative;
-  top: 15%;
-  left: 35%;
-}
-.Front{
-  height: 100%;
-  transform: translateY(-8%);
-  width: 23em;
-  position: absolute;
-  left: 50%;
-  z-index: 2;
-  border-radius: 6px;
-  background-color: #53df8b;
-  display: none;
+  top: 13%;
+  left: 38%;
 }
 .Encapsulamento{
   display: flex;
@@ -31,12 +20,14 @@
   border-radius: 15px;
   box-shadow: 0px 0px 25px black;
   background-color: rgb(23, 23, 32);
+  width: 80%;
 }
 .Login{
   display: flex;
   flex-direction: column;
   top: 4em;
   gap: 1em;
+  width: 100%;
 }
 
 .page-login-button{
@@ -48,37 +39,43 @@
   cursor: pointer;
   background-color: #5ddf91;
   font-weight: 700;
+  font-weight: 600;
+}
+.page-login-button:hover{
+  filter: opacity(0.6);
 }
 .Login div{
   display: flex;
   flex-direction: column;
   font-weight: 600;
 }
-.Login div label{
-  transition: top 1s;
-  font-size: 0.9em;
-  color: #5ddf91;
-  position: relative;
-  left: 1.5em;
-}
 .Login div .diferent{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  position: relative;
+  right: 1.5em;
 }
 
-svg{
+#startsvg{
   position: relative;
-  right: 0.4em;
+  left: 0.4em;
+  top: 2em;
   width: 1.5em;
   height: 1.5em;
-  color: rgb(102, 211, 144);
+  color: rgb(0, 255, 98);
+  z-index: 3;
 }
 .Login div input{
+  position: relative;
   border: none;
-  background-color: #5d5d6e;
+  background-color: #0b0b11;
   border-radius: 4px;
-  padding: 2px;
-  border-bottom: 2px solid #000000;
+  height: 2.5em;
+  font-size: 1em;
+  padding-left: 3em;
+  width: 100%;
+  border-bottom: 2px solid #0b0b11;
+  color: #ffffff;
 }
 .Login div input:focus{
   outline: none;
@@ -97,4 +94,24 @@ svg{
   100%{
     transform: translateY(0em);
   }
+}
+.DivExit{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+.DivExit .Exit{
+  position: static;
+  margin: 0;
+  margin-bottom: 0.2em;
+  padding: 0;
+}
+.DivExit:hover .Exit{
+  color: #5ddf91;
+}
+#returnsvg{
+  position: absolute;
+  top: 0.5em;
+  height: 1.6em;
+  left: 0.5em;
 }

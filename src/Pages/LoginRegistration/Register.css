@@ -1,0 +1,43 @@
+.Container-Register{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Area-Register{
+    padding: 3em;
+    width: 100%;
+}
+.Area-Register .container{
+    background-color: rgb(23, 23, 32);
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+.Area-Register .container .Intro h1{
+    color: #e4e4e4;
+    text-align: left;
+    line-height: 1em;
+}
+.Area-Register .container .Intro p,
+.Area-Register .container .Etapa p
+{
+    line-height: 1.4em;
+    color: #bbbbbb;
+}
+.Area-Register .container .Etapa{
+    display: flex;
+    gap: 1em;
+    align-items: center;
+}
+.Area-Register .container .Etapa div
+{
+    height: 1em;
+    width: 2em;
+    background-color: #bbbbbb;
+}
